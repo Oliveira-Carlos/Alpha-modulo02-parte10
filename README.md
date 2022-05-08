@@ -1,0 +1,1 @@
+<h1> Página teste com uso da tag 'canvas'<h1>
