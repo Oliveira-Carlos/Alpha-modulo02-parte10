@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste canvas</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            Página teste da tag 'canvas'
+        </h1>
+    </header>
+
+    <canvas style="border:1px solid black" id="tela" width="600" height="600"></canvas>
+
+    <script>
+        var tela = document.getElementById("tela");
+        var context = tela.getContext("2d");
+    
+    function desenhaImagem() {
+        var imagem = new Image();
+        imagem.src = "https://user-images.githubusercontent.com/103662099/167317763-357d6d23-f36a-43f7-a369-e1f72a00ef59.svg";
+        imagem.onload = function() {
+                context.drawImage(imagem,10,10);
+        }
+    }
+    
+    desenhaImagem();
+    
+    </script>
+</body>
+</html>
